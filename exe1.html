@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <center>
+    <h1>TEMA CENTRAL: FRUTAS</h1><br>
+    <br>
+    <div id="tema">
+        <label>ESCREVA O NOME DE UMA FRUTA</label><br><br>
+        <input type="text" id="valor">
+        <button onclick="frutas()">ENVIAR</button><br><br>
+    </div>
+    <div id="res"></div>
+</center>
+<script>
+    function frutas(){
+        // array 
+        var frutas = ["banana","abacaxi","ameixa","mexirica","maça","pera","uva"
+    ,"abacate","melancia","melão"]
+
+    // variavel
+    var nome = document.getElementById("valor").value
+    var res = document.getElementById("res")
+    controle = false
+
+    for(i=0;i<frutas.length;i++){
+        if(  nome== frutas[i] ){
+            res.innerHTML = "<h1>você acertou</h1>"
+            controle = true
+        } 
+        if( controle == false){
+            res.innerHTML = "voce perdeu"
+        }
+    }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe1</title>
+</head>
+<body>
+    <h1>exercicios arrey</h1>
+    <button onclick="nomes()">CLIQUE AQUI</button>
+    <div id="res"></div>
+
+
+
+    <script>
+        function nomes(){
+
+            var nome = ["isabella","ana","laura","aline","catharina","yas","joy","sophia","valeria","eduardo"]
+            var res = document.getElementById("res")
+            for(i = 0; i <nome.length; i++){
+            
+            res.innerHTML += nome[i] + "<br>"
+            // +=pq é o interioer mais o que vc vai acrecender
+        }
+        }
+    </script>
+</body>
+</html>

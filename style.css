@@ -1,0 +1,14 @@
+body{
+    color: rgb(12, 12, 66);
+}
+h1{
+    text-align: center;
+}
+#res{
+    display: flex;
+    text-align: center;
+    border: 3px solid black;
+    width: 400px;
+    height: 90px;
+    
+}
